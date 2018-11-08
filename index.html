@@ -23,6 +23,17 @@
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
          <script>
             
+            $(document).on("scroll", function(){
+              if($("#parallax").scrollTop() >86){
+                 $('html, body').animate({
+                  scrollTop: $(".culmn").offset().top
+                  }, 1000)
+            }
+            else
+              {
+                $("#parallax").slideDown(2500);  
+              }
+            });
 
             $(document).ready(function () {
               $("#goup").click(function() {
@@ -32,13 +43,14 @@
               });
             });
 
-            $(document).ready(function () {
-              $("#parallax").click(function() {
-                $('html, body').animate({
-                  scrollTop: $(".culmn").offset().top
-                }, 1000)
-              });
-            });
+
+            // $(document).ready(function () {
+            //   $("#parallax").click(function() {
+            //     $('html, body').animate({
+            //       scrollTop: $(".culmn").offset().top
+            //     }, 1000)
+            //   });
+            // });
 
             // Go down on click of button
              $(document).ready(function () {
@@ -327,14 +339,14 @@ html, body {
 }
 
 #videobutton{
-     background: url('assets/scrollnew.png') center center no-repeat;
+    background: url('assets/scrollnew.png') center center no-repeat;
     height: 160px;
-    left: 50%;
-    margin: -80px 0 0 -564px;
-    position: absolute;
-    top: 60%;
     width: 128px;
-    z-index: 1; 
+    z-index: 1;
+    position: absolute;
+
+    top:60%;
+    left:10%;   
     border: none;
 }
 
