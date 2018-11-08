@@ -13,7 +13,7 @@
          <link rel="stylesheet" href="styles/bootstrap-touch-slider.css">
          <!--Theme custom css -->
          <link rel="stylesheet" href="styles/style.css">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
          <!--<link rel="stylesheet" href="assets/css/colors/blue.css">-->
@@ -62,30 +62,18 @@
             });
 
             $(document).ready(function(){
-                $("parallax").scroll(function(){
-                    $('html, body').animate({
-                      scrollTop: $(".culmn").offset().top
-                    }, 1000)
+                $("#videobutton").mouseover(function(){
+                    $("#parallax").css("opacity", "0.5");
+                    // $("#parallax").css("background", "red 0.5");
+                });
+                $("#videobutton").mouseout(function(){
+                    $("#parallax").css("opacity", "1");
                 });
             });
 
             $(document).ready(function(){
                 $('.item').height($(window).height());
-            });
-
-
-           // $(window).resize(function(){
-           //    if ($(window).width() <= 900) {  
-
-           //    $("#parallax").click(function() {
-           //      $('html, body').animate({
-           //        scrollTop: $(".culmn").offset().top
-           //      }, 1000)
-           //    });
-         
-           //    }    
-           // });          
-            
+            });            
             
          </script>
          <style type="text/css">
@@ -358,17 +346,25 @@ html, body {
     top:58%;
     left:45%;   
     border: none;
+    outline: none;
 }
 
 @media only screen and (max-width: 900px) {
     #videobutton{
       background: none;
+
     }
 }
 
 @media only screen and (min-width: 1500px) {
     #videobutton{
       left: 47%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #video{
+        padding-top: 60px;
     }
 }
 
@@ -736,6 +732,7 @@ html, body {
                         <div class="col-md-3 no-padding">
 
                            <h4 class="text-white">Our Location</h4>
+                          
                          
                       </div>
                         <div class="col-md-3 no-padding">
