@@ -40,6 +40,15 @@
               });
             });
 
+            // Go down on click of button
+             $(document).ready(function () {
+              $("#videobutton").click(function() {
+                $('html, body').animate({
+                  scrollTop: $(".culmn").offset().top
+                }, 1000)
+              });
+            });
+
             $(document).ready(function(){
                 $("parallax").scroll(function(){
                     $('html, body').animate({
@@ -302,9 +311,31 @@
   object-fit:cover;
   }
 
+#video{
+  position: relative;
+}
+
+#videobutton{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+#videobutton{
+     background: url('assets/scrollnew.png') center center no-repeat;
+    height: 160px;
+    left: 50%;
+    margin: -80px 0 0 -564px;
+    position: absolute;
+    top: 60%;
+    width: 128px;
+    z-index: 1; 
+    border: none;
 }
 
          </style>
@@ -341,10 +372,13 @@ html, body {
          <!-- End Side Menu -->
       </nav>
       <!-- End off Nav -->       
-
-      <video autoplay controls loop id="parallax" class="parallax" src="assets/coffee.mp4" poster="assets/homebanner.jpg"       controls width="100%" height="100%">
+      <section id="video">
+      <video autoplay controls loop id="parallax" class="parallax" src="assets/tech.mp4" poster="assets/homeban.jpg"       controls width="100%" height="100%">
              This is fallback content to display for user agents that do not support the video tag.
+            
       </video>
+       <button id="videobutton" class="btn"></button>
+      </section>
 
       <div class="culmn">
          <!--Home page style-->
