@@ -73,8 +73,18 @@
                 $('.item').height($(window).height());
             });
 
-            
+
+           // $(window).resize(function(){
+           //    if ($(window).width() <= 900) {  
+
+           //    $("#parallax").click(function() {
+           //      $('html, body').animate({
+           //        scrollTop: $(".culmn").offset().top
+           //      }, 1000)
+           //    });
          
+           //    }    
+           // });          
             
             
          </script>
@@ -326,12 +336,12 @@
 #video{
   position: relative;
 }
-
+/*
 #videobutton{
    position: absolute;
     top: 50%;
     left: 50%;
-}
+}*/
 
 html, body {
     max-width: 100%;
@@ -345,9 +355,15 @@ html, body {
     z-index: 1;
     position: absolute;
 
-    top:60%;
-    left:10%;   
+    top:58%;
+    left:45%;   
     border: none;
+}
+
+@media only screen and (max-width: 900px) {
+    #videobutton{
+      background: none;
+    }
 }
 
          </style>
@@ -389,7 +405,7 @@ html, body {
              This is fallback content to display for user agents that do not support the video tag.
             
       </video>
-       <button id="videobutton" class="btn"></button>
+       <button id="videobutton" class="btn" class="img-responsive"></button>
       </section>
 
       <div class="culmn">
