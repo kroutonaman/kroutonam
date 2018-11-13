@@ -994,42 +994,54 @@ requestAnimationFrame(update);
     
     <script >
 
-        $("#section1").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#two").position().top-120
+    $(document).ready(function (){
+      $("#section1").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#one").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section2").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#three").position().top-120 
+    $(document).ready(function (){
+      $("#section2").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#two").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section3").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#four").position().top-120
+    $(document).ready(function (){
+      $("#section3").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#three").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section4").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#five").position().top-120 
+    $(document).ready(function (){
+      $("#section4").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#four").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section5").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#six").position().top-120 
+    $(document).ready(function (){
+      $("#section5").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#five").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section6").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#six").position().top-120 
+    $(document).ready(function (){
+      $("#section6").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#six").offset().top
+            }, 1000);               
         });
     });
-        
+    
 // makes the parallax elements
 function parallaxIt() {
   // create variables
