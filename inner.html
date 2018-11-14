@@ -32,7 +32,7 @@ overflow-x: hidden; // to remove the right space
 color:white;
 }
 
-.service-desc{
+/*.service-desc{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -48,9 +48,9 @@ line-height: 1.5;
 color: #ffffff;
 margin-bottom: .53em;
 margin: 0;
-}
+}*/
 
-.services-item{
+/*.services-item{
 position: relative;
 padding: 40px 40px;
 width: 100%;
@@ -58,9 +58,9 @@ width: 100%;
 
 .service-icon{
 padding: 30px 30px;
-}
+}*/
 
-.services-heading{
+/*.services-heading{
 color: #ffffff;
 text-align: center;
 font-style: normal;
@@ -68,7 +68,7 @@ font-weight: 700;
 font-size: 24px;
 line-height: 1.17;
 margin: auto;
-}
+}*/
 
 .static {
 position:absolute;
@@ -464,7 +464,9 @@ z-index: 1;
   flex-wrap: nowrap;
   height: 100%;
   justify-content: space-around;
-  position: relative;
+  position: relative;36
+  53
+  22.
   width: 100%;
 }
 .container-fluid section {
@@ -472,15 +474,13 @@ z-index: 1;
   height: 100vh;
   flex: 1;
   display: flex;
-  text-align: center;
+  /*text-align: center;*/
   position: relative;
   overflow: hidden;
   background-color: #000;
   /*z-index: -1;*/
 }
 .container-fluid section:nth-child(1) .image {
-  /*background-image: url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);*/
-  /*background-image: url(http://www.vagabonddesigns.co.za/wp-content/uploads/2017/04/Search-Engine-Marketing-SEM-720x418.jpg);*/
   background-image: url(http://ethios.in/wp-content/uploads/2017/01/sem.jpg);
 }
 .container-fluid section:nth-child(2) .image {
@@ -507,33 +507,38 @@ z-index: 1;
   z-index: 500;
   opacity: 0.4;
 }
+
+/*.stuff{
+    background-color: black;
+    opacity: 0.3;
+}*/
 .container-fluid section .stuff {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100%;
-  width: 100%;
-  max-width: 70%;
-  justify-content: center;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  height: 65%;
+  width: 50%;
   z-index: 1000;
-  /*color: #e67e22;*/
-  color:#FF4500;
-  margin: 0 auto;
-  font-size: 26px;
   position: relative;
+  top:30%;
+  font-family: Roboto,Arial,Helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  color: #fff;
+  padding: 20px;
+  /*z-index: 1;*/
 }
+
+.para{
+    line-height: 30px;
+}
+
+
 .container-fluid section .stuff h2 {
   margin: 0px;
 }
-.container-fluid section .stuff:before, .container-fluid section .stuff:after {
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: #d35400;
-  content: "";
-  margin: 30px 0;
-}
+
 .at-twitter {
   position: fixed;
   right: 20px;
@@ -577,6 +582,7 @@ a:hover, a:focus {
 }
 
 
+
 /*Parallax Page css end*/
  
 /*request section css*/
@@ -586,8 +592,111 @@ a:hover, a:focus {
   background-color: rgba(29,31,38,.9);
  
 }
+.request-title h1{
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.request-field{
+  font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #bfbfbf;
+    border: 6px solid #4d5457;
+    background-color: #4d5457;
+    margin-bottom: 0;
+    padding: 12px;
+}
+.request-msgfield{
+  font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #bfbfbf;
+    border: 6px solid #4d5457;
+    background-color: #4d5457;
+    margin-bottom: 0;
+    padding: 12px;
+    margin-top: 50px;
+        width: 57%;
+        height: 150px;
+}
+.request-button{
+     width: auto!important;
+    min-height: 48px;
+    padding: 0px 27px !important;
+    background-color: #004e98;
+    color: #ffffff;
+    border: 1px #32343b;
+    margin: 20px -56px;
+    border-radius: 100px;
+    
+}
+
+/*for button*/
+/*@import url(https://fonts.googleapis.com/css?family=BenchNine:700);*/
+.sec_button {
+  left:50%;
+  background-color: #993CF3;
+  border: none;
+  color: #ffffff;
+  width:140px;
+  height: 50px;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sec_button:before,
+.sec_button:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.sec_button:before {
+  border-color: #993CF3;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.sec_button:focus{
+    border-color:#993CF3;
+}
+
+.sec_button:after {
+  border-bottom-width: 2px;
+  border-color: #993CF3;
+  bottom: -5px;
+  right: 0px;
+}
+
+.sec_button:hover,
+.sec_button.hover {
+  background-color: #993CF3;
+}
+
+.sec_button:hover:before,
+.sec_button.hover:before,
+.sec_button:hover:after,
+.sec_button.hover:after {
+  height: 100%;
+  width: 100%;
+}
 
 
+.eff:hover {
+  background-color: #4CAF50;
+  color: white;
+}
 </style>
 </head>
 
@@ -644,128 +753,78 @@ a:hover, a:focus {
         <div class="container-fluid">
   <section id="one">
     <div class="image" data-type="background" data-speed="2"></div>
-    <div class="stuff" data-type="content"><h1>SECTION ONE</h1><h2>SEM</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="two">
     <div class="image" data-type="background" data-speed="7"></div>
-    <div class="stuff" data-type="content"><h1>SECTION TWO</h1><h2>SEO</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="three">
     <div class="image" data-type="background" data-speed="6"></div>
-    <div class="stuff" data-type="content"><h1>SECTION THREE</h1><h2>CONTENT MARKETING</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="four">
     <div class="image" data-type="background" data-speed="5"></div>
-    <div class="stuff" data-type="content"><h1>SECTION FOUR</h1><h2>SOCIAL MEDIA MARKETING</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="five">
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h1>SECTION FIVE</h1><h2>COMING SOON...</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="six">
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h1>SECTION SIX</h1><h2>COMING SOON...</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 </div>
-     </section>
-         
-         <section id="service" class="service sections">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <h1 class="service-title text-center">OUR SERVICES</h1>
-                     <p class="service-desc" > Krouton seamlessly integrates into your business workflow whether you are looking to create a new application or help with development and/or QA of your existing solution. We provide teams capable of increasing the velocity of your development or extending your technical capabilities.</p>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon filter-drop-shadow">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img class="static" src="https://lh4.googleusercontent.com/-gZiu96oTuu4/Uag5oWLQHfI/AAAAAAAABSE/pl1W8n91hH0/w140-h165-no/Homer-Static.png"><img class="active" src="https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- End off container -->
-         </section>
+     </section>         
       </div>
       
-       <!-- Tab Navigation -->
-
-
-
        <!-- Request estimate starts -->
       <section class="request-section" >
-        
+     <div class="container">
+  <div class="row">
+   <div class="col-md-12 col-md-offset-3">
+      <div class="request-title">
+        <h1>REQUEST ESTIMATE</h1>
+      </div>
+      <div class="col-md-3">
+
+       <input class="request-field" type="text" name="name" placeholder="Name">
+      </div>
+      <div class="col-md-3">
+          <input class="request-field" type="text" name="name" placeholder="Name">
+      </div>
+        <div class="col-md-9">
+          <textarea class="request-msgfield" placeholder="Project Details" ></textarea>
+      </div>
+       <div class="col-md-4 m-top-20">
+         <a class="request-left" href="mailto:sales@kroutonindia.com">sales@kroutonindia.com</a>
+         <p>+1 305 767 2434</p>
+      </div>
+        <div class="col-md-4">
+         <button class="request-button eff" >Send Request</button>
+      </div>
+
+         </div>   
+  </div>
+</div>
       </section>
        <!-- Request estimate ends -->
 
